@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  1. Definition and Comparison:  What is an arrow function in JavaScript, and how does its syntax differ from a traditional function expression?
+//               a. Definition:- The function which does not have function keyword, function name and denoted by =>. They are introduced in ES6, to increase the readability of anonymous functon.
+//                 b.Syntax difference
+
+//              Traditional Function Expression:  
+                function add(a, b) {
+                    return a + b;
+                }
+                console.log(add(5,5));
+//              Arrow Function :
+                let sum = (a , b) => a + b;
+                console.log(sum(5,5));
+
+
+//        2. Basic Conversion: Convert the following function into an arrow function:
+//               function add(a, b) {
+//                     return a + b; }
+                var add = (a , b) => a + b ;
+                console.log(add(2,3)) 
+
+          
+//        3. Implicit Return: Rewrite the following function as an arrow function that uses an implicit return:
+//             function square(n) {
+//                   return n * n; }
+
+                let square = (n) => n*n;
+                console.log(square(5));
+
+
+//             
+//       4a.Single Parameter Syntax in Arrow Functions
+//                           A : When an arrow function has exactly one parameter, parentheses () are optional.
+//       4b. Syntax Without Parentheses (Implicit Form)
+                            let mul1 = a => a * a ;
+                            console.log(mul1(5));
+//                        c. Syntax With Parentheses (Explicit Form)  
+                            let mul2 = a => { return a**5 };
+                            console.log(mul2(5));
+
+
+
+
+//         6.    Arrow Function with Multiple Parameters :  ( When an arrow function has multiple parameters, parentheses must be. )
+               let subtract = (a, b) => { return b -a }; 
+               console.log(subtract(5, 3));
+
+
+//       
+//        7.   Arrow Function with No Parameters : ( When an arrow function has no parameters, you have to use empty parentheses () before the => arrow. )
+            const no_paramters = () =>   "Hello , Team Worriors! " 
+            console.log(no_paramters());
+
+  </script>
+
+</body>
+</html>
